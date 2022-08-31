@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GenreController;
+use App\Http\Controllers\SongController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/genres', [GenreController::class, "show"]);
+
+Route::get('/songs/{genreId}', [SongController::class, "show"]);

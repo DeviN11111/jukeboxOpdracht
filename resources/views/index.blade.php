@@ -7,6 +7,6 @@
     <title>homepage</title>
 </head>
 <body>
-    <a href="/genres">Playlist</a>
+    <a href="/genres">Genres</a>
 </body>
 </html>

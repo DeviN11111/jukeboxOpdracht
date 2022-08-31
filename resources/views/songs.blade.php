@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-@foreach($genreData as $value)
+@foreach($songData as $value)
 <a href="/songs/{{$value->name}}">{{$value->name}}</a>
 <br>
 @endforeach
