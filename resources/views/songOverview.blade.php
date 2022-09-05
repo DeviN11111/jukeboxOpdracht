@@ -8,8 +8,13 @@
 </head>
 <body>
 @foreach($songData as $value)
-<a href="/songOverview/{{$value->name}}">{{$value->name}}</a>
+<a href="/song/{{$value->name}}">{{$value->name}}</a>
+<br>
+<a href="/song/{{$value->name}}">{{$value->duration}}</a>
+<br>
+<a href="/song/{{$value->name}}">{{$value->artist}}</a>
 <br>
 @endforeach
+    
 </body>
 </html>

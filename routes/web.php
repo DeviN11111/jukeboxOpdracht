@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/genres', [GenreController::class, "show"]);
 
 Route::get('/songs/{genreId}', [SongController::class, "show"]);
+
+Route::get('/songOverview/{songName}', [SongoverviewController::class, "show"]);
