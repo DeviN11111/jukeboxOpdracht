@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>leaked</h1>
 @foreach($songData as $value)
 <a href="/song/{{$value->name}}">{{$value->name}}</a>
 <br>

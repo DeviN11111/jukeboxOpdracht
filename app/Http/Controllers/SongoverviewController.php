@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\SongOverview;
+use App\Models\Song;
 
 class SongoverviewController extends Controller
 {
-    public function show($songData){
-        $songData = Song::where("name", $songData->name); // where genre id =
+    public function show($songId){
+        $songData = Song::where("id", $songId)->get(); // where genre id =
         return view("songOverview", ["songData"=>$songData]);
     }
 }
