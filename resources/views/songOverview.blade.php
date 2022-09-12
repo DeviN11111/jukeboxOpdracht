@@ -15,6 +15,7 @@
 <br>
 <a href="/song/{{$value->name}}">{{$value->artist}}</a>
 <br>
+<a href="/addToPlaylist/{{$value->id}}">Add song to playlist</a>
 @endforeach
     
 </body>
